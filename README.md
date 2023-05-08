@@ -2,4 +2,7 @@
 Implementation of paper A Neural Algorithm of Artistic Style
 
 
-More information in Neural_Style_transfer_Implementation.pdf
+Implementation explained in in Neural_Style_transfer_Implementation.pdf
+
+Demostration in neuralStyleTransfer.ipynb
+
