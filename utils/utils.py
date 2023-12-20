@@ -4,7 +4,7 @@ import numpy as np
 
 
 def get_image_tensor(path,rows,cols):
-    """open an image and process it like vgg16 training set"""
+    """process an image in the manner of the VGG16 training set."""
     image = cv2.imread(path)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image = cv2.resize(image,(cols, rows))
@@ -15,7 +15,7 @@ def get_image_tensor(path,rows,cols):
 
 
 def deprocess_image(x,rows,cols):
-    """convert a tensor processed by vgg19 into a valid image by applying the inverse of the preprocess function"""
+    """convert a tensor that has been processed by VGG19 into a valid image by applying the inverse of the preprocessing function."""
     x = x.reshape((rows, cols, 3))
     # Remove zero-center by mean pixel
     x[:, :, 0] += 103.939
